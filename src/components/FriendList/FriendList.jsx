@@ -1,6 +1,8 @@
+import './FriendList.css'
+
 const FriendList = () => {
   return (
-    <div>
+    <div className="friend-list">
       <h1>Friend List</h1>
     </div>);}
 

@@ -1,6 +1,8 @@
+import './Profile.css';
+
 const Profile = () => {
   return (
-    <div>
+    <div className='profile'>
        {" "}
       <div>
            {" "}
