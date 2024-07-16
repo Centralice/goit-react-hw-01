@@ -1,8 +1,8 @@
-import './TransactionHistory.css';
+import transactionHistoryStyles from './TransactionHistory.module.css';
 
 const TransactionHistory = () => {
   return (
-    <div className="transaction-history">
+    <div className={transactionHistoryStyles.history}>
       <h1>Transaction History</h1>
     </div>
   );

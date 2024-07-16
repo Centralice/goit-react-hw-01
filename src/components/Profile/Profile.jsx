@@ -1,8 +1,8 @@
-import './Profile.css';
+import profileStyles from './Profile.module.css';
 
 const Profile = () => {
   return (
-    <div className='profile'>
+    <div className={profileStyles.profile}>
        {" "}
       <div>
            {" "}

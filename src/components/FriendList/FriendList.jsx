@@ -1,9 +1,10 @@
-import './FriendList.css'
+import friendListStyles from './FriendList.module.css'
 
 const FriendList = () => {
   return (
-    <div className="friend-list">
+    <div className={friendListStyles.friend-list}>
       <h1>Friend List</h1>
-    </div>);}
+    </div>
+  );}
 
     export default FriendList;
