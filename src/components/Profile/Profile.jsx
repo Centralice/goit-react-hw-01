@@ -1,32 +1,23 @@
-import profileStyles from './Profile.module.css';
-
-const Profile = () => {
+const Profile = (props) => {
   return (
-    <div className={profileStyles.profile}>
-       {" "}
+    <div>
+      {" "}
       <div>
-           {" "}
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
-          alt="User avatar"
-        />
-            <p>Petra Marica</p>    <p>@pmarica</p>    <p>Salvador, Brasil</p> {" "}
-      </div>
-       {" "}
+        {" "}
+        <img src={props.avatar} alt="User avatar" />
+        <p>{props.name}</p> <p>{props.tag}</p> <p>{props.location}</p>{" "}
+      </div>{" "}
       <ul>
-           {" "}
+        {" "}
         <li>
-                <span>Followers</span>      <span>1000</span>   {" "}
-        </li>
-           {" "}
+          <span>Followers</span> <span>{props.stats.followers}</span>{" "}
+        </li>{" "}
         <li>
-                <span>Views</span>      <span>2000</span>   {" "}
-        </li>
-           {" "}
+          <span>Views</span> <span>{props.stats.views}</span>{" "}
+        </li>{" "}
         <li>
-                <span>Likes</span>      <span>3000</span>   {" "}
-        </li>
-         {" "}
+          <span>Likes</span> <span>{props.stats.likes}</span>{" "}
+        </li>{" "}
       </ul>
     </div>
   );

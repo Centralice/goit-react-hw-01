@@ -1,12 +1,18 @@
-import FriendList from "./FriendList/FriendList";
 import Profile from "./Profile/Profile";
+import FriendList from "./FriendList/FriendList";
 import TransactionHistory from "./TransactionHistory/TransactionHistory";
-import userData from ".components/userData.json";
+import userData from "../userData.json";
 
 const App = () => {
   return (
     <div>
-      <Profile />
+      <Profile
+        name={userData.username}
+        tag={userData.tag}
+        location={userData.location}
+        image={userData.avatar}
+        stats={userData.stats}
+      />
       <FriendList />
       <TransactionHistory />
     </div>
@@ -14,4 +20,3 @@ const App = () => {
 };
 
 export default App;
-
